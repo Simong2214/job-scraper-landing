@@ -35,27 +35,19 @@ export interface FooterData {
 
 export const footerNavigationData: FooterData = {
 	footerAbout: {
-		title: 'Foxi.',
+		title: 'Roozna.',
 		aboutText:
-			'Expertly made, responsive, accessible components in React and HTML ready to be used on your website or app. Just copy and paste them on your Tailwind CSS project.',
+			'The #1 No Code Job Data Backfiller. Add fresh jobs to your job board on autopilot without any coding, so your job board always look fresh and active. Totally customise the specific jobs you want to add and run on a schedule to automatically add them to your site. (Ex: Add all the latest restaurant jobs in New York once a day to your site)',
 		logo: {
 			src: '/logo.svg',
-			alt: 'The tailwind astro theme',
-			text: 'Foxi.'
+			alt: 'The #1 No Code Job Data Backfiller',
+			text: 'Roozna.'
 		}
 	},
 	footerColumns: [
 		{
 			category: 'Product',
 			subCategories: [
-				{
-					subCategory: 'Features',
-					subCategoryLink: '/features'
-				},
-				{
-					subCategory: 'FAQ',
-					subCategoryLink: '/faq'
-				},
 				{
 					subCategory: 'Pricing',
 					subCategoryLink: '/pricing'
@@ -70,42 +62,8 @@ export const footerNavigationData: FooterData = {
 				}
 			]
 		},
-		{
-			category: 'About us',
-			subCategories: [
-				{
-					subCategory: 'About us',
-					subCategoryLink: '/'
-				},
-				{
-					subCategory: 'News',
-					subCategoryLink: '/blog'
-				},
-				{
-					subCategory: 'Careers',
-					subCategoryLink: '/blog'
-				}
-			]
-		},
-		{
-			category: 'Get in touch',
-			subCategories: [
-				{
-					subCategory: 'Contact',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Support',
-					subCategoryLink: '/contact'
-				},
-				{
-					subCategory: 'Join us',
-					subCategoryLink: '/contact'
-				}
-			]
-		}
 	],
 	subFooter: {
-		copywriteText: '© Foxi 2024.'
+		copywriteText: '© Roozna 2024.'
 	}
 }

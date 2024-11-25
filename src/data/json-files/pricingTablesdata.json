@@ -1,78 +1,77 @@
 [
 	{
 		"header": {
-			"title": "Basic",
-			"subtitle": "Ideal for individual developers.",
+			"title": "Starter",
+			"subtitle": "Perfect for new job boards",
 			"currency": "$",
 			"price": "19",
-			"priceLabel": "month, billed anually",
-			"priceMontly": "25",
-			"priceLabelMontly": "month",
-			"buttonName": "Try for free",
-			"buttonLink": "/"
+			"priceLabel": "month",
+			"priceMontly": "13",
+			"priceLabelMontly": "month, billed annually",
+			"buttonName": "Start 14-day free trial",
+			"buttonLink": "/signup",
+			"popular": false
 		},
 		"body": {
 			"listItems": [
-				{ "listItem": "Join forces with fellow architects" },
-				{ "listItem": "Present your projects with flair and captivate your audience." },
-				{ "listItem": "Immerse yourself in the dynamic realm of architecture." }
+				{ "listItem": "Up to 2,000 jobs/month" },
+				{ "listItem": "1 website integration" },
+				{ "listItem": "Daily updates" },
+				{ "listItem": "Basic job filters" },
+				{ "listItem": "Email support" }
 			]
-		},
-		"footer": {
-			"buttonName": "See all features",
-			"buttonLink": "/"
-		},
-		"type": "basic"
+		}
 	},
 	{
 		"header": {
-			"title": "Team",
-			"subtitle": "Ideal for small teams",
+			"title": "Growth",
+			"subtitle": "For growing job boards",
 			"currency": "$",
 			"price": "29",
-			"priceLabel": "month, billed anually",
-			"priceMontly": "35",
-			"priceLabelMontly": "month",
-			"buttonName": "Try for free",
-			"buttonLink": "/"
+			"priceLabel": "month",
+			"priceMontly": "20",
+			"priceLabelMontly": "month, billed annually",
+			"buttonName": "Start 14-day free trial",
+			"buttonLink": "/signup",
+			"popular": true
 		},
 		"body": {
 			"listItems": [
-				{ "listItem": "Join forces with fellow architects" },
-				{ "listItem": "Present your projects with flair and captivate your audience." },
-				{ "listItem": "Immerse yourself in the dynamic realm of architecture." },
-				{ "listItem": "Unlock endless inspiration" }
+				{ "listItem": "Up to 5,000 jobs/month" },
+				{ "listItem": "3 website integrations" },
+				{ "listItem": "Real-time updates" },
+				{ "listItem": "Advanced job filters" },
+				{ "listItem": "API access" },
+				{ "listItem": "Zapier integration" },
+				{ "listItem": "Priority support" }
 			]
-		},
-		"footer": {
-			"buttonName": "See all features",
-			"buttonLink": "/"
-		},
-		"type": "featured"
+		}
 	},
 	{
 		"header": {
-			"title": "Enterprise",
-			"subtitle": "Ideal for companies",
+			"title": "Pro",
+			"subtitle": "For serious job platforms",
 			"currency": "$",
-			"price": "49",
-			"priceLabel": "month, billed anually",
-			"priceMontly": "65",
-			"priceLabelMontly": "month",
-			"buttonName": "Try for free",
-			"buttonLink": "/"
+			"price": "149",
+			"priceLabel": "month",
+			"priceMontly": "104",
+			"priceLabelMontly": "month, billed annually",
+			"buttonName": "Start 14-day free trial",
+			"buttonLink": "/signup",
+			"popular": false
 		},
 		"body": {
 			"listItems": [
-				{ "listItem": "Join forces with fellow architects" },
-				{ "listItem": "Present your projects with flair and captivate your audience." },
-				{ "listItem": "Immerse yourself in the dynamic realm of architecture." }
+				{ "listItem": "Up to 20,000 jobs/month" },
+				{ "listItem": "Unlimited websites" },
+				{ "listItem": "Real-time updates" },
+				{ "listItem": "Custom job filters" },
+				{ "listItem": "Full API access" },
+				{ "listItem": "All integrations" },
+				{ "listItem": "Custom exports" },
+				{ "listItem": "24/7 priority support" },
+				{ "listItem": "Custom features available" }
 			]
-		},
-		"footer": {
-			"buttonName": "See all features",
-			"buttonLink": "/"
-		},
-		"type": "basic"
+		}
 	}
 ]

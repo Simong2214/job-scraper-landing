@@ -41,7 +41,10 @@ type PricingTableData = {
 	type: 'basic' | 'featured'
 }
 
-const pricingData: PricingTableData[] = pricingTablesData as PricingTableData[]
+const pricingData: PricingTableData[] = pricingTablesData.map(data => ({
+	...data,
+	type: data.header.popular ? 'featured' : 'basic'
+})) as PricingTableData[]
 ---
 
 <Section>
@@ -50,7 +53,7 @@ const pricingData: PricingTableData[] = pricingTablesData as PricingTableData[]
 			<span id="monthlyLabel" class="font-semibold text-neutral-400 transition-colors"
 				>Bill monthly</span
 			>
-			<Toggle id="pricingType" label="pricing" showLabel={false} checked={true} />
+			<Toggle id="pricingType" label="pricing" showLabel={false} checked={false} />
 			<span
 				class="font-semibold text-neutral-400 text-primary-500 transition-colors"
 				id="annualLabel">Bill annualy</span

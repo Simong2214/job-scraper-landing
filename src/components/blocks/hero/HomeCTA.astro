@@ -13,10 +13,9 @@ import ChipNotification from '../../ui/ChipNotification.astro'
 import { Image } from 'astro:assets'
 import Button from '../../ui/Button.astro'
 import AvatarGroup from '../../ui/AvatarGroup.astro'
-
 // Content
 // - Hero Image
-import heroImage from '../../../assets/hero-01.png'
+import heroImage from '../../../assets/demo_roozna.png'
 // - Avatars
 import user1 from '../../../assets/avatars/avatar-01.webp'
 import user2 from '../../../assets/avatars/avatar-02.webp'
@@ -33,13 +32,14 @@ const avatars = [
 		<Col span="2" />
 		<Col span="8" align="center">
 			<ChipNotification radius="rounded-full" classes="mb-6">
-				<strong>30K+</strong> satisfied customers
-				<AvatarGroup avatars={avatars} radius="rounded-full" slot="button" />
+				Backfill your job board with fresh data
 			</ChipNotification>
-			<h1>Enhance team <strong>performance</strong> with seamless integration</h1>
-
-			<p class="pb-0 text-lg">Work smarter, not harder, with our innovative platform</p>
-			<Button size="lg" link="/">Get started for free</Button>
+			<h1 class="text-6xl">
+				The #1 No Code<br />
+				<strong class="text-primary-500">Job Backfiller</strong>
+			</h1>
+			<p class="pb-4 text-lg text-neutral-700 dark:text-neutral-300">Add fresh jobs to your job board on autopilot without any coding, so your job board always look fresh and active. Totally customise the specific jobs you want to add and run on a schedule to automatically add them to your site. (Ex: Add all the latest restaurant jobs in New York once a day to your site)</p>
+			<a href="https://form.zootools.co/go/Ui8SK8MUDfuuMebh5iav" data-waitlist-id="Ui8SK8MUDfuuMebh5iav" class="text-white hover:text-white/80 bg-green-500 rounded-lg p-5 text-bold">Add jobs to your site for free</a>
 		</Col>
 		<Col span="2" />
 		<Col span="2" />

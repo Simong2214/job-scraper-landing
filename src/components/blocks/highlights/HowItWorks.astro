@@ -1,0 +1,73 @@
+---
+const steps = [
+  {
+    number: "1",
+    title: "Connect your site",
+    description: "Choose your platform (WordPress, Webflow, etc.) and connect in one click.",
+    tag: "2 minutes"
+  },
+  {
+    number: "2",
+    title: "Set your filters",
+    description: "Pick locations, job types, and keywords you want to target.",
+    tag: "1 minute"
+  },
+  {
+    number: "3",
+    title: "Schedule updates",
+    description: "Choose how often you want new jobs. Daily, weekly - it's up to you.",
+    tag: "1 minute"
+  },
+  {
+    number: "4",
+    title: "Watch it grow",
+    description: "Jobs appear on your site automatically. No maintenance needed.",
+    tag: "Automatic"
+  }
+]
+---
+
+<div class="bg-neutral-50 dark:bg-neutral-900">
+  <div class="max-w-6xl mx-auto py-24 px-4">
+    <h2 class="text-3xl font-bold text-center mb-4">
+      Get started in <span class="text-primary-500">4 minutes</span>
+    </h2>
+    <p class="text-neutral-600 dark:text-neutral-400 text-center mb-16 max-w-2xl mx-auto">
+      No coding. No complex setup. Just follow these simple steps.
+    </p>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {steps.map((step, index) => (
+        <div class="relative">
+          {/* Connector lines between steps */}
+          {index < steps.length - 1 && (
+            <div class="hidden lg:block absolute top-8 left-full w-full h-0.5 bg-primary-100 dark:bg-neutral-800 -z-10"></div>
+          )}
+          
+          <div class="bg-white dark:bg-neutral-800 rounded-xl p-6 h-full border border-neutral-100 dark:border-neutral-700 relative">
+            {/* Step number */}
+            <div class="absolute -top-4 left-6 bg-primary-500 text-white w-8 h-8 rounded-full flex items-center justify-center font-bold">
+              {step.number}
+            </div>
+            
+            {/* Time tag */}
+            <div class="inline-block bg-primary-50 dark:bg-neutral-700 text-primary-600 dark:text-primary-300 text-sm px-3 py-1 rounded-full mb-4 mt-2">
+              {step.tag}
+            </div>
+            
+            <h3 class="text-xl font-semibold mb-2">{step.title}</h3>
+            <p class="text-neutral-600 dark:text-neutral-400">{step.description}</p>
+          </div>
+        </div>
+      ))}
+    </div>
+
+    {/* Final CTA */}
+    <div class="text-center mt-16">
+      <p class="text-neutral-600 dark:text-neutral-400 mb-6">
+        Ready to grow your job board?
+      </p>
+      <a href="https://form.zootools.co/go/Ui8SK8MUDfuuMebh5iav" data-waitlist-id="Ui8SK8MUDfuuMebh5iav" class="text-white hover:text-white/80 bg-orange-500 rounded-lg p-4 -mt-4 text-bold">Increase the value of your job board right now →</a>
+    </div>
+  </div>
+</div>

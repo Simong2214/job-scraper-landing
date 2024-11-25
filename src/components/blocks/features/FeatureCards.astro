@@ -13,57 +13,61 @@ import Card from '../../ui/cards/FeatureCard.astro'
 
 // Content
 // - Cards
-import feature01 from '../../../assets/cards/feature-01.svg'
-import feature02 from '../../../assets/cards/feature-02.svg'
-import feature03 from '../../../assets/cards/feature-03.svg'
-import feature04 from '../../../assets/cards/feature-04.svg'
-import feature05 from '../../../assets/cards/feature-05.svg'
+import feature01 from '../../../assets/cards/integrations.png'
+import feature02 from '../../../assets/cards/job-running.png'
+import feature03 from '../../../assets/cards/job-map.png'
+import feature04 from '../../../assets/cards/job-search.png'
+import feature05 from '../../../assets/cards/job-results.png'
 ---
 
 <Section id="features">
 	<Row>
 		<Col span="12" align="center" classes="mb-12 max-w-4xl mx-auto">
-			<h2 class="text-pretty">Innovative tools to <strong>transform</strong> your workflow</h2>
+			<h2 class="text-pretty">Add jobs to your site. <strong>Zero code needed.</strong></h2>
 			<p class="pb-0 text-lg">
-				Explore the suite of tools designed to streamline your workflow, enhance productivity, and
-				drive growth. Each product is crafted with precision to meet your needs and exceed your
-				expectations.
+				Get fresh job listings on your website automatically. Works with WordPress, Webflow, or any other platform you use.
 			</p>
 		</Col>
 	</Row>
 	<Row>
 		<Col span="4">
 			<Card
-				title="All your data in one place"
-				subtitle="Stay on top of your tasks and deadlines with our intuitive project management tool. Visualize progress, assign tasks, and collaborate seamlessly."
+				title="Works with your website"
+				subtitle="Ready-made integrations for WordPress, Webflow, Wix, Squarespace, Bubble, and more. Just plug and play."
 				image={feature01}
 				link="/features"
 			/>
 		</Col>
-		<Col span="4" classes="flex flex-col gap-6">
+		<Col span="4">
 			<Card
-				title="Organize & manage your projects "
-				subtitle="Stay on top of your tasks and deadlines with our intuitive project management tool. "
+				title="Automate everything"
+				subtitle="Schedule daily or weekly job updates. Connect with Zapier to send jobs anywhere - your CRM, email, or Slack."
 				image={feature02}
 				link="/features"
 			/>
+		</Col>
+		<Col span="4">
 			<Card
-				title="Keep your team connected"
-				subtitle="With our integrated chat platform share updates, files, and messages in a secure and user-friendly environment."
+				title="Target exact locations"
+				subtitle="Get jobs from specific cities, regions, or countries. Use our map tool to set your target areas."
 				image={feature03}
 				link="/features"
 			/>
 		</Col>
-		<Col span="4" classes="flex flex-col gap-6">
+	</Row>
+	<Row classes="mt-6">
+		<Col span="6">
 			<Card
-				title="Manage your customers"
-				subtitle="Build and nurture customer relationships with our powerful CRM system. "
+				title="Advanced job filtering"
+				subtitle="Filter by salary range, job type, or keywords. Only get the jobs that match your site's focus."
 				image={feature04}
 				link="/features"
 			/>
+		</Col>
+		<Col span="6">
 			<Card
-				title="Simplify your financial operations"
-				subtitle="Streamline your billing process with our easy-to-use invoicing tool. Create, send, and track invoices effortlessly."
+				title="Clean, formatted data"
+				subtitle="Every job comes with a clean title, description, and company details. No messy data or duplicates."
 				image={feature05}
 				link="/features"
 			/>

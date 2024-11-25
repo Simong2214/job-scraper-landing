@@ -1,0 +1,61 @@
+---
+
+const benefits = [
+  {
+    icon: 'graph-up',
+    title: 'More Site Traffic',
+    description: 'Fresh jobs daily means more visitors. Our users see 2-3x traffic increase within months.'
+  },
+  {
+    icon: 'search',
+    title: 'Better SEO Rankings',
+    description: 'More content = better SEO. Each job adds unique, indexed content to your site.'
+  },
+  {
+    icon: 'shield-check',
+    title: 'Look Professional',
+    description: 'A full job board builds trust. Show thousands of jobs instead of empty pages.'
+  },
+  {
+    icon: 'money',
+    title: 'Increase Revenue',
+    description: 'More traffic means more employer signups. Start monetizing your job board faster.'
+  }
+]
+---
+
+<div class="max-w-6xl mx-auto py-24 px-4">
+  <h2 class="text-5xl font-bold text-center mb-4">
+    Why use <span class="text-primary-500">Roozna</span>?
+  </h2>
+  <p class="text-neutral-500 text-center mb-16 max-w-2xl mx-auto">
+    Stop struggling with an empty job board. Get the benefits of a fully-loaded platform without the work.
+  </p>
+
+  <div class="grid md:grid-cols-2 gap-12 mt-8">
+    {benefits.map(benefit => (
+      <div class="flex gap-4 items-start">
+        <div class="flex-shrink-0 w-12 h-12 rounded-xl bg-primary-50 flex items-center justify-center">
+          <svg class="w-6 h-6 text-primary-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            {benefit.icon === 'graph-up' && (
+              <path d="M3 20h18M3 20v-8l6-6 4 4 8-8M21 4h-4m4 0v4" />
+            )}
+            {benefit.icon === 'search' && (
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            )}
+            {benefit.icon === 'shield-check' && (
+              <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            )}
+            {benefit.icon === 'money' && (
+              <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            )}
+          </svg>
+        </div>
+        <div>
+          <h3 class="text-xl font-semibold mb-2">{benefit.title}</h3>
+          <p class="text-neutral-400 leading-relaxed">{benefit.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+</div>

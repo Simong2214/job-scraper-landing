@@ -6,17 +6,17 @@ import Layout from '../layouts/Layout.astro'
 import Hero from '../components/blocks/hero/HomeCTA.astro'
 import Features from '../components/blocks/features/FeatureCards.astro'
 import Testimonial from '../components/blocks/testimonials/BasicDark.astro'
-import HighlightBlocks from '../components/blocks/highlights/HightlightRows.astro'
+import HighlightContent from '../components/blocks/highlights/HighlightContent.astro'
 import CTA from '../components/blocks/CTA/BasicDark.astro'
 
 // Content
 // - Testimonial background
 import testimonialBackground from '../assets/testimonial-bg-01.webp'
+import HowItWorks from '../components/blocks/highlights/HowItWorks.astro'
 // - SEO
 const SEO = {
-	title: 'Foxi | Your Productivity Toolkit',
-	description:
-		'Foxi is a powerful productivity toolkit designed to enhance your workflow and boost your productivity. With features like analytics, security, and integrations, Foxi is the perfect solution for your business.'
+	title: 'The #1 Job Data Backfiller | Roozna',
+	description: 'Get fresh job data for your job board or HR platform. Schedule automated job scraping, access via API, or export in bulk. No coding needed.'
 }
 ---
 
@@ -24,6 +24,7 @@ const SEO = {
 	<Hero />
 	<Features />
 	<Testimonial bg={testimonialBackground} bgPosition="right" />
-	<HighlightBlocks />
+	<HighlightContent />
+	<HowItWorks />
 	<CTA />
 </Layout>

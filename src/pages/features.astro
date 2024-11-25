@@ -1,63 +1,123 @@
 ---
 // Components
-// - Layout
 import Layout from '../layouts/Layout.astro'
-// - UI
 import Feature from '../components/blocks/features/FeatureSticky.astro'
 import Hero from '../components/blocks/hero/PageHeader.astro'
 import CTA from '../components/blocks/CTA/BasicDark.astro'
 
 // Data
-import featuresData from '../data/json-files/featuresData.json'
-// - Feature Categories
-const featuresAnalytics = featuresData.filter((feature) => feature.category === 'Analytics')
-const featuresProductivity = featuresData.filter((feature) => feature.category === 'Productivity')
-const featuresSecurity = featuresData.filter((feature) => feature.category === 'Security')
-const featuresIntegrations = featuresData.filter((feature) => feature.category === 'Integrations')
-const featuresSupport = featuresData.filter((feature) => feature.category === 'Support')
-
-// Content
-// - SEO
-const SEO = {
-	title: 'Foxi | Features to Boost Productivity & Security',
-	description:
-		"Explore Foxi's powerful features designed to enhance productivity, ensure top-notch security, and integrate seamlessly with your favorite tools. Join thousands of satisfied users and transform your workflow with Foxi today!"
+const featuresData = {
+  automation: [
+    {
+      title: "Scheduled Job Updates",
+      description: "Set daily or weekly updates. Jobs appear automatically on your site.",
+      icon: "eye"
+    },
+    {
+      title: "Smart Deduplication",
+      description: "No duplicate jobs. Our system automatically removes repeated listings.",
+      icon: "bug-ant"
+    },
+    {
+      title: "Custom Filters",
+      description: "Target specific industries, locations, and job types.",
+      icon: "shield-check"
+    }
+  ],
+  integration: [
+    {
+      title: "One-Click Platform Connect",
+      description: "Easy setup for WordPress, Webflow, Wix, and more.",
+      icon: "plus"
+    },
+    {
+      title: "API Access",
+      description: "Direct API access for custom platforms and applications.",
+      icon: "user"
+    },
+    {
+      title: "Zapier Integration",
+      description: "Connect with 3000+ apps through Zapier.",
+      icon: "eye-slash"
+    }
+  ],
+  quality: [
+    {
+      title: "Clean Job Data",
+      description: "Properly formatted titles, descriptions, and company info.",
+      icon: "key"
+    },
+    {
+      title: "Location Verification",
+      description: "Accurate location data for better local targeting.",
+      icon: "identification"
+    },
+    {
+      title: "Salary Information",
+      description: "Added salary ranges when available.",
+      icon: "plus"
+    }
+  ],
+  delivery: [
+    {
+      title: "Multiple Export Formats",
+      description: "Get jobs in JSON, CSV, or XML format.",
+      icon: "filled-star"
+    },
+    {
+      title: "Webhook Support",
+      description: "Real-time job notifications to your system.",
+      icon: "bell-alert"
+    },
+    {
+      title: "Custom Widgets",
+      description: "Ready-to-use job widgets for your website.",
+      icon: "paint-brush"
+    }
+  ]
 }
-// - Page Header
+
+// SEO
+const SEO = {
+  title: 'Roozna | No-Code Job Board Backfilling Platform',
+  description: 'Automatically add thousands of relevant jobs to your job board. No coding required. Works with WordPress, Webflow, and more. Start growing your job board today!'
+}
+
+// Page Header
 const header = {
-	title: 'Why you and your team will <strong>love</strong> foxi.',
-	text: 'Streamline your tasks, protect your data, and enjoy working with our tools!'
+  title: 'Everything you need to build a <strong>successful</strong> job board.',
+  text: 'Stop worrying about empty job listings. Get all the tools to grow your job board on autopilot.'
 }
 ---
 
 <Layout title={SEO.title} description={SEO.description}>
-	<Hero title={header.title} text={header.text} />
-	<Feature
-		title="Insightful Analytics"
-		text="Delve into your data with precision and uncover actionable insights."
-		data={featuresAnalytics}
-	/>
-	<Feature
-		title="Efficiency Unleashed"
-		text="Streamline tasks and focus on what matters with tools designed to boost your productivity."
-		data={featuresSecurity}
-		classes="bg-neutral-50 dark:bg-neutral-900"
-	/>
-	<Feature
-		title="Ultimate Data Protection"
-		text="Keep your data safe with top-notch security measures and real-time threat detection."
-		data={featuresProductivity}
-	/>
-	<Feature
-		title="Seamless Connectivity"
-		text="Effortlessly connect your favorite apps and automate workflows for a smoother workday."
-		data={featuresIntegrations}
-		classes="bg-neutral-50 dark:bg-neutral-900"
-	/>
-	<Feature
-		title="24/7 Expert Help"
-		text="Our friendly support team is always here to assist you with any questions or issues."
-		data={featuresSupport}
-	/>
-	<CTA />
+  <Hero title={header.title} text={header.text} />
+  
+  <Feature
+    title="Automated Job Updates"
+    text="Set it up once, and watch your job board grow automatically."
+    data={featuresData.automation}
+  />
+  
+  <Feature
+    title="Easy Integration"
+    text="Works with your existing website. No technical skills needed."
+    data={featuresData.integration}
+    classes="bg-neutral-50 dark:bg-neutral-900"
+  />
+  
+  <Feature
+    title="Quality Job Data"
+    text="Clean, accurate, and properly formatted job listings every time."
+    data={featuresData.quality}
+  />
+  
+  <Feature
+    title="Flexible Delivery"
+    text="Get job data exactly how you need it, when you need it."
+    data={featuresData.delivery}
+    classes="bg-neutral-50 dark:bg-neutral-900"
+  />
+
+  <CTA />
 </Layout>
